@@ -1,0 +1,31 @@
+wget - Baixar um arquivo da internet [HTTP]
+
+TAR - Programa utilizado no Linux, juntar pastas e arquivos
+
+GZIP - GNU Zip - Compactar arquivos e pastas no Linux
+
+BZIP2 - Compacta com outro algoritmo, mais lento que o GZIP
+
+Para juntar arquivos ou pastas com o TAR
+    tar -cvf [nome-do-arquivo-novo] [aquivos/pasta a ser juntado]
+
+        -c - Create
+
+Para juntar um arquivo ou pasta com o TAR e compactar com o GZIP
+    tar -cvzf [nome-do-arquivo-novo] [aquivos/pasta a ser juntado]
+
+Para juntar um arquivo ou pasta com o TAR e compactar com o BZIP2
+    tar -cvjf [nome-do-arquivo-novo] [aquivos/pasta a ser juntado]
+
+Para extrair um arquivo - TAR - GZIP - BZIP2
+    tar -xvf [nome-do-arquivo]
+
+        -x - Extrair
+        -v - Verbose [Verbalizar]
+        -f - FILE
+
+Para visualizar o que tem dentro de um arquivo TAR 
+    tar -tvf [nome-do-arquivo]
+
+senai-sc.tar - 20480 B
+senai-sc.tar.gz - 469 B

@@ -1,0 +1,42 @@
+d rwxr-xr-x root root jun 25 17:25 colonia-marciana
+
+Tipos de Arquivos/Pasta
+    - -> Arquivo
+    d -> Pasta/Diretório
+    l -> Link/Atalho
+
+    b -> Bloco de Dados
+    c -> Caractere
+    s -> Socket [comunição entre processos]
+
+Permissões
+    r - Read [Leitura] - 4
+    w - Write [Escrita] - 2
+    x - Execute [Execução] - 1
+
+     Octal
+        7	-> rwx
+        6	-> rw-
+        5	-> r-x
+        4	-> r--
+        3	-> -wx
+        2	-> -w-
+        1	-> --x
+        0	-> ---
+
+COMANDOS
+    chmod - Comando para alterar as permissões de pastas e arquivos
+
+        chmod [nº-da-permisssão] [pasta/arquivo]
+            -R - Altera a permissão da pasta e do conteúdo dentro dela
+
+    chgrp - Comando para alterar o grupo dono da pasta/arquivo
+
+        chgrp [grupo] [pasta/arquivo]
+    
+    chown - Comando para alterar o usuário dono da pasta/arquivo
+
+        chown [usuario] [pasta/arquivo]
+
+PESQUISAR
+Como alterar o grupo dono e o usuário dono de uma pasta de uma vez só?

@@ -1,0 +1,40 @@
+Grupos - Colonia Marciana
+    controle
+        Bruna Oliveira - boliveira
+    estufa
+        Ana Cristina - acristina
+    industrial
+    suporte
+    terra
+
+    COMANDOS
+        addgroup [nome-do-grupo] - Criar um grupo
+
+        delgroup [nome-do-grupo] - Apagar um grupo
+
+    ARQUIVOS
+            /etc/group - Arquivo que armazena os grupos no Linux
+
+    GID - Group ID - Identificação do Grupo
+
+        0 -> 1000 - Reservado pelo sistema
+    
+
+Usuários
+
+    COMANDOS
+        adduser [nome-do-usuário] - Criar um usuário
+        adduser [nome-do-usuário] [nome-do-grupo] - Adicionar um usuário a um grupo
+
+        passwd [nome-do-usuário] - Trocar a senha de um usuário
+
+        id [nome-do-usuário] - Ver informações sobre um usuário
+
+        deluser [nome-do-usuário] - Deletar um usuário
+        deluser [nome-do-usuário] [nome-do-grupo] - Retirar um usuário do grupo
+
+    ARQUIVOS
+        /etc/passwd - Arquivo que armazena os usuários no Linux
+        /etc/shadow - Arquivo que armazena as senhas dos usuários no Linux
+
+    UID - User ID - Identificação do Usuário

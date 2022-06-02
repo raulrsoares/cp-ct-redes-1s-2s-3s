@@ -1,0 +1,39 @@
+enable
+    configure terminal
+
+    !Mudar o nome do dispositivo
+        hostname SW-CORE
+
+    !Criar as VLANs
+        vlan 10
+        name ALUNOS
+        vlan 20
+        name PROFESSORES
+        vlan 30
+        name COORDENACAO
+        vlan 90
+        name GERENCIAMENTO
+    
+    !Configurar as Interfaces Trunk
+        interface range F0/23-24
+        switchport mode trunk
+        switchport trunk native vlan 99
+        switchport trunk allowed vlan 10,20,30,90,99
+
+    !Atrelar as VLANs às Interfaces
+        interface f0/22
+        switchport mode access
+        switchport access vlan 90
+
+    !Configurar Endereço IP
+        interface vlan 90
+        ip address 192.168.0.190 255.255.255.240
+    
+    !Configurar as linhas de VTY para Telnet
+        line vty 0 15
+        password Sextou!
+        login
+
+    !Salvar as configurações
+        end
+        wr

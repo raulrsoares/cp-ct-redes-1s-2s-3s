@@ -1,0 +1,1 @@
+**Os IPs dos hosts da "CLARO" foram mudados para a rede 192.168.1.0/24**

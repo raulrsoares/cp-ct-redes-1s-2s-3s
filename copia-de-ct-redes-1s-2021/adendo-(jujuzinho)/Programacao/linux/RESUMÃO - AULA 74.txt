@@ -1,0 +1,19 @@
+su - - Entrar no usuário Root
+
+mkdir - Criação de uma pasta
+rmdir - Apagar uma pasta [VAZIA]
+rm - Apagar um arquivo
+        -r - Apagar uma pasta e todo o conteúdo dela
+
+touch - Criar arquivo
+
+cp [arquivo/pasta de origem] [arquivo/pasta de destino] - Copiar Arquivo
+        -r - Copiar uma pasta e todo o conteúdo     dela
+
+mv [arquivo/pasta de origem] [arquivo/pasta de destino] - Move arquivos e pastas
+
+APT
+
+    apt install [nome-do-programa] - Instalar um programa
+    apt search [nome-do-programa] - Procurar um programa
+    apt update - Buscar uma lista atualizada dos programas disponíveis no servidor

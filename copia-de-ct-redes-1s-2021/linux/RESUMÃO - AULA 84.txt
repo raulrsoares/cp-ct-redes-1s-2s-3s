@@ -1,0 +1,31 @@
+COMANDOS
+    ip add - Visualizar as interfaces de rede do Linux
+        lo - loopback [localhost] - 127.0.0.1
+        enp0s3 - Interface NAT
+        enp0s8 - Interface Host-Only
+
+    ifconfig - Visualizar as interfaces de rede do Linux
+        -a - Exibir TODAS as interfaces de rede
+
+        O ifconfig faz parte de um pacote chamado 'net-tools'
+            apt install net-tools
+
+    systemctl - Controlador de processos do Linux
+
+        systemctl restart [serviço] - Para e Inicia o serviço
+        systemctl reload [serviço] - Atualiza as configurações
+
+        systemctl start [serviço]
+        systemctl stop [serviço]
+
+        systemctl status [serviço]
+    
+        systemctl restart networking - Reinicia as interfaces de rede
+
+    ifdown [nome-da-interface] - Desligar a interface de rede
+    ifup [nome-da-interface] - Ligar a interface de rede
+
+ARQUIVO
+    /etc/network/interfaces - Configurações das interfaces de redes [Debian]
+
+

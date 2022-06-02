@@ -1,0 +1,32 @@
+/etc - Pasta onde estão as configurações do Linux
+
+/etc/hostname - Armazenado o nome do Servidor
+
+/var/log/ - Armazandos os arquivos de Log
+    auth.log - Informações sobre os usuários
+    syslog - Informações sobre o Sistema
+
+cat - Visualiza o conteúdo de um arquivo de texto
+
+more - Visuliza o arquivo em páginas
+    cat [nome-do-arquivo] | more - Visualiza o conteúdo do arquivo em páginas
+
+grep - Filtrar o que é exibido do arquivo
+    cat [nome-do-arquivo] | grep [o-que-procurar]
+
+less - more 'melhorado'
+
+tail - Visualiza as últimas linhas do arquivo
+        -f - Deixa o arquivo aberto, mostrando as atualizações
+
+head - Visualiza as primeiras linhas do arquivo
+
+Expressão Regular
+    * - Subtitui qualquer texto
+
+    x*.com
+
+PLUS:
+    systemctl restart networking - Reiniciar as interfaces de rede
+
+    reboot - Reiniciar o sistemas operacional

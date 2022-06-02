@@ -1,0 +1,39 @@
+SIGLAS
+    PID - Process ID
+
+COMANDOS
+    history - Mostra o histórico de comandos realizados no termina
+
+    find - Pesquisar o nome de arquivos/pastas
+        -name - Nome do arquivo
+        -iname - Ignora o case sensitive
+
+    df [Disk Free] - Visualizar o tamanho/disponível/utilizado de um disco
+        -h - Human Readable [Humanamente Legível]
+    
+    du [Disk Unit] - Visualizar o tamanho total de uma pasta/arquivo
+        -h - Human Readable [Humanamente Legível]
+        -s - Exibe de forma resumida o tamanho da pasta [summary]
+
+    top - O gerenciador de tarefas do Linux
+        htop - Versão melhorada do top
+    
+    cat /etc/issues - Versão do Sistema Instalado
+
+    cat /proc/version - Versão do Kernel [núcleo]
+
+    arch - Mostra a arquitetura do seu processador
+        i686 - 32 bits
+        x86 - 32 bits
+        x64 - 64 bits
+        amd64 - 64 bits
+        arm - Mobile
+
+SIMBOLOS
+
+    > - Pega a saída de um comando e salva para um arquivo de texto
+        Exemplo:
+            df -h / > tamanho-do-barra.txt
+    
+    >> - Pega a saída de um comando e salva para um arquivo de texto, porém mantém o conteúdo do arquivo
+            df -h / >> tamanho-do-barra.txt

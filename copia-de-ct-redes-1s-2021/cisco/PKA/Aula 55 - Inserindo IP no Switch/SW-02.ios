@@ -1,0 +1,45 @@
+enable
+    configure terminal
+
+    !Mudar o nome do dispositivo
+        hostname SW-02
+
+    !Criar as VLANs
+        vlan 10
+        name ALUNOS
+        vlan 20
+        name PROFESSORES
+        vlan 30
+        name COORDENACAO
+        vlan 90
+        name GERENCIAMENTO
+    
+    !Atrelar as VLANs às Interfaces
+        interface f0/1
+        switchport mode access
+        switchport access vlan 10
+        interface f0/2
+        switchport mode access
+        switchport access vlan 20
+        interface f0/3
+        switchport mode access
+        switchport access vlan 30
+    
+    !Configurar a Interface Trunk
+        interface f0/23
+        switchport mode trunk
+        switchport trunk native vlan 99
+        switchport trunk allowed vlan 10,20,30,90,99
+    
+    !Configurar Endereço IP
+        interface vlan 90
+        ip address 192.168.0.189 255.255.255.240
+    
+    !Configurar as linhas de VTY para Telnet
+        line vty 0 15
+        password Sextou!
+        login
+
+    !Salvar as configurações
+        end
+        wr  

@@ -1,0 +1,66 @@
+Editor de Texto no Terminal
+    VIM
+        Versão melhorado do 'vi'
+
+        vim.tiny -  VIM mais simples, que vem junto com o Debian
+
+        vimtutor - Tutorial que ensina os passos básicos
+
+        Instalar a versão completa do VIM
+            apt update
+            apt install vim -y
+        
+        vim [nome-do-arquivo] - Criar um arquivo no VIM
+
+        VÁRIOS MODOS
+            MODO NORMAL [ESC]
+                :
+                :set number
+                :colorscheme [tema] - Trocar as cores do editor
+
+                :w - Salvar o arquivo
+                :w [nome-do-novo-arquivo] - Salvar em um novo arquivo
+
+                :wq - Salvar e sair
+
+                :q - Sair do VIM
+
+                :q! - Força a saída
+
+                x - Apagar um caractere do Texto
+
+                dw [delete word] - Apagar a palavra onde o cursor está
+                d2w - Apagar as duas palavras a partir do cursor
+                d$ - Apagar todos os texto a partir do cursor até o fim da linha
+                dd - Apagar a linha inteira
+                2dd - Apagar duas linhas
+
+                u [undo] - Desfaz a última alteração
+                Ctrl+r - Refaz a última alteração 
+
+                p - Colar o texto copiado com o y
+
+                yy - Copia uma linha inteira
+                2yy - Copia duas linhas inteiras
+
+            MODO DE INSERÇÃO [i - Inserção]
+
+            MODO VISUAL [v - Visual]
+
+                y [yank] - Copiar o texto selecionado
+
+    Nano
+        Padrão do GNU
+
+        nano [nome-do-arquivo] - Criar um arquivo de Texto
+
+        ^ - Ctrl
+        M - Alt
+
+        ^O - Ctrl + O - Salvar as alterações
+        ^X - Ctrl + X - Sair do Nano
+        M-U - Alt + U - Desfaz a última alteração
+
+VIM
+NANO
+EMACS
